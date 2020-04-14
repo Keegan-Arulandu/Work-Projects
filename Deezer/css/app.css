@@ -1,0 +1,291 @@
+﻿/* app.css
+ * Hubble Africa default screen styling ...
+ **/
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.tmg-wrapper{
+    width: 1146px;
+    height: 670px;
+    position: fixed;
+    overflow: hidden;
+}
+
+input, button:focus {
+    outline: none;
+}
+
+span {
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+}
+
+/* Default Swiper Slides Styling */
+.swiper-slide {
+    height: 670px;
+}
+
+/* Default Animations */
+.animated {
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+
+
+/* Landing Page - Slide  */
+#landing-section {
+    position:absolute;
+    top:0;
+    left:0;
+    width:1146px;
+    height:670px;
+}
+
+.vid-1 {
+    position:absolute;
+    top: 8px;
+    left: 40px;
+    width:558px;
+    height:306px;
+    background: url(../img/0-landing/vid-1.png) no-repeat;
+    background-position: center !important;
+    z-index:15;
+    opacity: 0;
+}
+
+.vid-2 {
+    position:absolute;
+    top: 316px;
+    left: 40px;
+    width:558px;
+    height:306px;
+    background: url(../img/0-landing/vid-2.png) no-repeat;
+    background-position: center !important;
+    z-index:15;
+    opacity: 0;
+}
+
+.text {
+    position:absolute;
+    top: 60px;
+    right: 40px;
+    width: 478px;
+    height:306px;
+    background: url(../img/0-landing/text.png) no-repeat;
+    background-position: center !important;
+    z-index:15;
+    opacity:1;
+}
+
+.get-btn {
+    position:absolute;
+    top: 343px;
+    right: 0px;
+    width: 478px;
+    height: 166px;
+    background: url(../img/0-landing/get.png) no-repeat;
+    background-position: center !important;
+    z-index:15;
+    opacity: 0;
+}
+
+.logo {
+    position:absolute;
+    top: 35px;
+    right: 42px;
+}
+
+
+/* Video Section */
+
+#video-section {
+    position:absolute;
+    top: 670px;
+    left:0;
+    width:1146px;
+    height:670px;
+    z-index:25;
+    opacity: 0;
+    display: none;
+}
+
+.close-vid {
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 310px;
+    height: 110px;
+    z-index: 15;
+    /*background: url(../img/1-videos/) no-repeat;*/
+}
+
+.cover-overlay {
+    position:absolute;
+    top: 0px;
+    left:0;
+    width:1146px;
+    height: 670px;
+    background-position:center !important;
+    background: url(../img/1-videos/vid-1/bg.jpg) no-repeat;
+    opacity: 1;
+    display: block;
+    z-index: 20;
+}
+
+.container-1 {
+    position:absolute;
+    bottom: -2px;
+    left:0;
+    width:1146px;
+    height: 136px;
+    background-position:center !important;
+    background: url(../img/1-videos/overlay.png) no-repeat;
+    opacity: 1;
+}
+
+.video-cover {
+    position:absolute;
+    top: 14px;
+    left: 17px;
+    padding: 0px 0 0px;
+    width: 115px;
+    height: 114px;
+    z-index:5;
+    background-repeat: no-repeat !important;
+    background: url(../img/1-videos/vid-1/1.png) no-repeat;
+}
+
+.video-text {
+    position:absolute;
+    top: 39px;
+    left: 160px;
+    padding: 0px 0 0px;
+    width: 690px;
+    height: 94px;
+    z-index:5;
+    background-repeat: no-repeat !important;
+    /* background: url(../img/1-video/text-1.png) no-repeat; */
+}
+
+.app {
+    position:absolute;
+    top: 37px;
+    right: 40px;
+    padding: 0px 0 0px;
+    width: 250px;
+    height: 94px;
+    z-index: 15;
+    background-repeat: no-repeat !important;
+    background: url(../img/1-videos/get.png) no-repeat;
+}
+
+.text {
+    position: absolute;
+}
+
+.top {
+    opacity:0;
+}
+
+.bottom {
+    opacity:1;
+}
+
+#video-add {
+    position:absolute;
+    top:0;
+    left:0;
+    width:1146px;
+    height:670px;
+    z-index:25;
+    opacity:1;
+    diplay:block;
+}
+
+
+/*Info Slides Page - Slide 1*/
+.cmp-info {
+    overflow: hidden;
+}
+
+.home {
+    position: absolute;
+    top: 22px;
+    right: 15px;
+    width: 270px;
+    height:80px;
+    z-index:15;
+}
+
+.text-slides {
+    position:absolute;
+    top: 162px;
+    left: 72px;
+    width: 610px;
+    height: 190px;
+    text-align: left;
+    z-index:15;
+    opacity: 0;
+    background-repeat: no-repeat !important;
+    background: url(../img/2-slides/1/text.png);
+}
+
+.prev {
+    position:absolute;
+    top: 262px;
+    left: -58px;
+    width: 190px;
+    height:150px;
+    z-index:15;
+    background: url(../img/2-slides/prev-ina.png) no-repeat;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.next {
+    position:absolute;
+    top: 262px;
+    right: -58px;
+    width: 190px;
+    height:150px;
+    z-index:15;
+    background: url(../img/2-slides/next.png) no-repeat;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+#add-timer {
+    position:absolute;
+    top: 670px;
+    left:0;
+    width:1146px;
+    height:670px;
+    z-index:25;
+    opacity: 0;
+}
+
+#timer {
+    position:absolute;
+    top: 528px;
+    left: 487px;
+    width: 80px;
+    height: 60px;
+    font-size: 40pt;
+    color:#fff;
+    text-align: center;
+    font-family:sans-serif;
+}
+
+#sec {
+    position:absolute;
+    top: 528px;
+    left: 558px;
+    width: 80px;
+    height: 60px;
+    font-size: 40pt;
+    color:#fff;
+    text-align: center;
+    font-family:sans-serif;
+}
