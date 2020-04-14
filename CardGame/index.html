@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Index</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Stylsheets -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/normalize.min.css" />
+
+</head>
+<body onload="bodyLoadedHandler()">
+
+    <!-- TMG Wrapper -->
+    <div class="tmg-wrapper">
+
+        <!-- Home -->
+        <section id="cmp-home">
+            <img src="img/1home/beat-the-clock.png" class="beat-the-clock-styling animated fadeInUp" />
+            <img src="img/1home/memory-game.png" class="memory-style animated fadeInUp2" />
+
+            <!-- Interacted Element -->
+            <span class="start-button interact animated slideInBounce" data-section="game"></span>
+        </section>
+
+        <!-- Game -->
+        <section id="cmp-game">
+            <div class="game-stop-wrapper"></div>
+            <div class="wrap">
+                <div class="game"></div>
+
+                <!-- Interacted Element -->
+                <span class="restart-game restart" id="btnRestart"></span> 
+                <p id="timer">0:30</p>
+                <span class="pause-game" id="btnPause"></span>
+                <span class="play-game" id="btnPlay"></span> 
+            </div>
+        </section>
+
+        <!-- Lost -->
+        <section id="cmp-lost">
+
+            <!-- Interacted Element -->
+            <span class="try-again-button interact" data-section="game"></span>
+        </section>
+
+        <!-- Win -->
+        <section id="cmp-win">
+            
+            <!-- Interacted Element -->
+            <span class="enter-button interact" data-section="game"></span>
+            <span class="try-again-button-2 interact" data-section="game"></span>
+        </section>
+
+        <!-- Form -->
+        <section id="cmp-form">
+            <p class="form-notification"></p>
+
+            <form id="form">
+                <input type="text" id="name" placeholder="Ім'я" />
+                <input type="number" id="number" placeholder="Контактний номер" />
+                <input type="button" id="submit" />
+
+                <!-- Interacted Element -->
+                <span class="cancel-button interact" data-section="home"></span>
+            </form>
+        </section>
+
+        <section id="ad-section" class="column-ad" >
+            <video type="video/mp4" id="ad-video" width="1146" height="670" src="img/Ads/ad-1.mp4" data-string="video-1"></video>
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/modernizr-3.5.0.min.js"></script>
+    <script src="js/hub-api.js"></script>
+    <script src="js/cabapi.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/memory.js"></script>
+    <script src="js/main.js"></script>
+
+
+    <!-- Taxi Interactive -->
+    <script>
+        /*----------  Taxi Utils (Form handling)  ----------*/
+
+        function bodyLoadedHandler() {
+            //DO NOT CHANGE THIS CODE
+        }
+
+        function clickHandler(event) {
+            try {
+                // DO NOT REMOVE OR MODIFY THIS CODE
+                event.preventDefault();
+                event.stopImmediatePropagation();
+                //alert('click handler!');
+
+                // fetch user input
+                var name = $("#name").val();
+                var number = $("#number").val();
+
+                //this object should contain user input data
+                var transportObject = {
+                    "name": name,
+                    "contact-number": number
+                };
+
+                // New API for saving user input data to main application
+
+                // hide form
+                $('.form-notification').text('Ви ввели, Удачи!').show();
+                setTimeout(function () 
+                {
+                    $('.form-notification').text('').hide();
+                    $("#form")[0].reset();
+                    $('.cancel-button').trigger('click');
+                }, 2000);
+            } catch (error) {
+                alert("Error sending stats to main app!");
+            }
+        }
+    </script>
+
+</body>
+</html>

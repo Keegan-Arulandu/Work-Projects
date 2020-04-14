@@ -1,0 +1,345 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+}
+
+.tmg-wrapper {
+    width: 1146px;
+    height: 670px;
+    position: fixed;
+    overflow: hidden;
+}
+
+@font-face {
+    src: url(../css/gotham.otf);
+    font-family: Gotham;
+}
+
+/* SWIPER SLIDE SELECTORS */
+.swiper-slide {
+    height: 670px !important;
+}
+
+
+/* LISTINGS LISTINGS - INFO SLIDES LEFT */
+.left-info-slides {
+    width: 424px;
+    float: left;
+    position: relative;
+    z-index: 99;
+}
+
+.info {
+    background: #fff;
+}
+
+#pagination {
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+
+.current-slide-integer {
+    position: absolute;
+    top: 63px;
+    left: 37px;
+    font-size: 21px;
+    color: #323232;
+    font-family: Gotham;
+    font-weight: bolder;
+}
+
+#section-info-text {
+    position: relative;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    float: left;
+}
+
+.active {
+    display: block;
+    margin: 0;
+    float: left;
+}
+
+.inactive {
+    display: none;
+    float: left;
+}
+
+#section-listings-buttons {
+    position: absolute;
+    width: 368px;
+    height: 63px;
+    margin: 0 auto;
+    top: 565px;
+    left: 26px;
+}
+
+.btn-listing-contact {
+    background: url(../img/2-listings/info-buttons/1/dates.png);
+}
+
+.info-button {
+    position: relative;
+    float: left;
+    width: 49%;
+    height: 63px;
+    z-index: 99;
+}
+
+.cant-click {
+    pointer-events: none;
+}
+
+.btn-more-info {
+    margin: 0 7px 0 0;
+    background: url(../img/2-listings/info-buttons/0/more-info.png);
+}
+
+/* LISTINGS LISTINGS - INFO SLIDES RIGHT */
+.right-info-slides {
+    width: 722px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* LISTINGS LISTINGS - NAVIGATION */
+#section-navigation {
+    position: absolute;
+    top: 556px;
+    left: 525px;
+    width: 519px;
+    height: 83px;
+    background: url(../img/2-listings/1/nav.png);
+    z-index: 99;
+}
+
+.btn-prev {
+    position: relative;
+    width: 183px;
+    height: 83px;
+    float: left;
+    z-index: 99;
+}
+
+.btn-grid {
+    position: relative;
+    width: 153px;
+    height: 83px;
+    float: left;
+    z-index: 99;
+}
+
+.btn-next {
+    position: relative;
+    width: 183px;
+    height: 83px;
+    float: left;
+    z-index: 99;
+}
+
+.btn-special {
+    display: none;
+    position: absolute;
+    width: 183px;
+    height: 83px;
+    right: 0;
+    z-index: 130;
+}
+
+/* LISTINGS - GRID */
+.listing-grid {
+    background-image: url(../img/1-home/bg.png);
+    background-position: 0px -2px;
+    background-repeat: no-repeat;
+}
+
+.row {
+    width: 93%;
+    height: 72%;
+    margin: 0 auto;
+    position: relative;
+    top: 158px;
+}
+
+.column {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.column-33 {
+    position: relative;
+    width: 33.3%;
+    height: 231px;
+    margin: 0 0 13px 0;
+    z-index: 99;
+}
+
+.item {
+    display: none;
+}
+
+.item-0 {
+    background: url(../img/1-home/1.png);
+}
+
+.item-1 {
+    background: url(../img/1-home/2.png);
+}
+
+.item-2 {
+    background: url(../img/1-home/3.png);
+}
+
+.item-3 {
+    background: url(../img/1-home/5.png);
+}
+
+.item-4 {
+    background: url(../img/1-home/6.png);
+}
+
+.item-5 {
+    background: url(../img/1-home/4.png);
+}
+
+/* LISTINGS - CONTACT */
+.listing-contact {
+    background: url(../img/4-contact/bg.png);
+}
+
+#form {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 479px;
+    height: 670px;
+    background: url(../img/4-contact/form.png);
+    float: left;
+}
+
+.input-field {
+    position: absolute;
+    left: 74px;
+    border: 2px solid transparent;
+    background: transparent;
+    width: 303px;
+    font-size: 16pt;
+    padding: 13px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+#name {
+    top: 185px;
+}
+
+#number {
+    top: 262px;
+}
+
+#email {
+    top: 339px;
+}
+
+#submit {
+    position: absolute;
+    left: 69px;
+    top: 433px;
+    border: transparent;
+    background: transparent;
+    width: 343px;
+    height: 72px;
+}
+
+button, input:focus {
+    outline: none;
+}
+
+.btn-home {
+    left: 510px;
+    top: 30px;
+    background: url(../img/4-contact/close.png);
+    width: 130px;
+    height: 62px;
+}
+
+.notification {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 15pt;
+    text-shadow: 1px 1px 2px #667da8;
+    display: none;
+}
+
+/* LISTING SPECIAL */
+.listing-special {
+    background: url(../img/2-listings/special.png);
+}
+
+    .listing-special > .btn-home {
+        left: 997px;
+        top: 19px;
+        background: url(../img/4-contact/close.png);
+        width: 130px;
+        height: 62px;
+    }
+
+/* ANIMATIONS */
+.animated {
+    animation-duration: 0.8s;
+    -webkit-animation-duration: 0.8s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+
+@-webkit-keyframes flipInY {
+    from {
+        -webkit-transform: perspective(700px) rotate3d(0, 1, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        opacity: 1;
+    }
+
+    40% {
+        -webkit-transform: perspective(700px) rotate3d(0, 1, 0, 0deg);
+        -webkit-animation-timing-function: ease-in;
+    }
+
+    60% {
+        -webkit-transform: perspective(700px) rotate3d(0, 1, 0, 0deg);
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: perspective(700px) rotate3d(0, 1, 0, 0deg);
+    }
+
+    to {
+        -webkit-transform: perspective(700px);
+    }
+}
+
+.flipInY {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInY;
+    display: block;
+}

@@ -1,0 +1,252 @@
+﻿body {
+  padding: 0;
+  margin: 0;
+}
+
+.tmg-wrapper{
+  width: 1146px;
+  height: 670px;
+  position: fixed;
+  overflow: hidden;
+  background: #180f22;
+}
+
+section{
+  width: 1146px;
+  height: 670px;
+  background-size: cover;
+  background-position: 0 0; 
+}
+
+#cmp-home{background: url(../img/1home/bg.png) no-repeat;text-align: center;display:block;z-index: 10;}
+.beat-the-clock-styling{position:absolute;top:30%;left: 0;right: 0;margin: 0 auto;}
+.memory-style{position: absolute;left: 0;right: 0;margin: 0 auto;top: 26%;}
+.start-button{position:absolute;left: 0;right:0;margin:0 auto;width: 367px;height: 95px;background: url(../img/1home/start-button.png) no-repeat;top: 60%;}
+
+#cmp-lost{background: url(../img/3lost/lost-bg.png) no-repeat;text-align: center;display:none;z-index: 10;}
+.try-again-button{position:absolute;left:0;right:0;margin:0 auto;width: 394px;height: 95px;top: 53%;}
+
+#cmp-win{background: url(../img/4win/win-bg.png) no-repeat;text-align: center;display:none;z-index: 10;}
+.enter-button{position:absolute;left: 377px;right:0;width: 394px;height: 95px;top: 53%;}
+.try-again-button-2{position:absolute;left: 77px;right:0;width: 394px;height: 54px;top: 65%;}
+
+#cmp-form{background: #05000e; display: none;}
+#form{position: absolute;background: url(../img/5form/form.png) no-repeat;width: 438px;height: 390px;left: 0;right: 0;margin: 0 auto;top: 85px;}
+input:focus{outline:none}
+#name{position: absolute;top: 56px;font-size: 19pt;padding: 15px;height: 40px;border: 0px solid red;width: 407px;}
+#number{position: absolute;top: 156px;font-size: 19pt;padding: 15px;height: 40px;border: 0px solid red;width: 407px;}
+#submit{position:absolute;width: 323px;height: 84px;top: 260px;left: 57px;background: transparent;border: 0;z-index: 500;}
+.cancel-button{position: absolute;width: 150px;height: 30px;top: 360px;left: 142px;}
+
+#cmp-game{background: #33664c;display:none;z-index: 10;}
+/*Memory Game*/
+
+.game-stop-wrapper{position: absolute;top: 140px;width: 1146px;height: 455px;z-index: 500;}
+.wrap {
+position: absolute;
+height: 75%;
+min-height: 500px;
+padding: 0;
+top: 0;
+}
+.restart{
+margin: 0 auto;
+text-align: center;
+position:  relative;
+top: 30px;
+font-size: 24pt;
+font-family: monospace;
+background: #3ac6ee;
+width: 145px;
+padding: 5px 20px;
+border-radius: 5px;
+color: #fff;
+}
+
+.game {-webkit-transform-style: preserve-3d;transform-style: preserve-3d;-webkit-perspective: 500px;perspective: 500px;min-height: 455px;position: relative;top: 149px;left: 0;right: 0;margin: 0 auto;width: 90%;}
+
+@-webkit-keyframes matchAnim {
+0% {
+  background: #bcffcc;
+}
+100% {
+  background: white;
+}
+}
+
+@keyframes matchAnim {
+0% {
+  background: #bcffcc;
+}
+100% {
+  background: white;
+}
+}
+.card {float: left;width: 128px;height: 174px;text-align: center;display: block;margin: 21px 21px;-webkit-perspective: 500px;perspective: 500px;position: relative;cursor: pointer;z-index: 50;-webkit-tap-highlight-color: transparent !important;border-radius: 20px;}
+.card .inside {width: 130px;height: 175px;display: block;-webkit-transform-style: preserve-3d;transform-style: preserve-3d;-webkit-transition: .2s ease-in-out;transition: .2s ease-in-out;background: transparent !important;border-radius: 20px;}
+.card .inside.picked, .card .inside.matched {
+-webkit-transform: rotateY(180deg);
+transform: rotateY(180deg);
+}
+.card .inside.matched {
+-webkit-animation: .2s matchAnim ease-in-out;
+animation: .2s matchAnim ease-in-out;
+-webkit-animation-delay: 0s;
+animation-delay: 0s;
+}
+.card .front, .card .back {-webkit-backface-visibility: hidden;backface-visibility: hidden;position: absolute;top: 0;left: 0;width: 130px;height: 174px;}
+.card .front img, .card .back img {max-width: 100%;display: block;margin: 0 auto;max-height: 100%;}
+.card .front {
+-webkit-transform: rotateY(-180deg);
+transform: rotateY(-180deg);
+}
+
+/* Level Two */
+.level-2 .card .front img, .card .back img {max-width: 100%;display: block;margin: 0 auto;max-height: 89% !important;}
+.level-2 .card .front, .card .back {-webkit-backface-visibility: hidden;backface-visibility: hidden;position: absolute;top: 0;left: 0;width: 130px !important;height: 197px;}
+.level-2 .card {
+    float: left;
+    width: 129px !important;
+    height: 175px;
+    text-align: center;
+    display: block;
+    margin: 24px 4px !important;
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    position: relative;
+    cursor: pointer;
+    z-index: 50;
+    -webkit-tap-highlight-color: transparent !important;
+    border-radius: 20px;
+}
+
+.level-2 .card .inside {
+    width: 130px !important;
+    height: 176px;
+    display: block;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    background: transparent !important;
+    border-radius: 20px;
+}
+
+.level-2  {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    min-height: 455px;
+    position: relative;
+    top: 149px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 96% !important;
+}
+
+.success-wrapper{
+display: none;
+position: absolute;
+top: 0;
+}
+
+#specials-section{
+display: none;
+width: 100%;
+height: 100%;
+}
+
+.restart-game{position: absolute;width: 304px;height: 76px;left: 140px;top: 26px;background: url(../img/2game/restart.png) no-repeat;}
+
+.pause-game{position: absolute;width: 304px;height: 76px;top: 26px;left: 700px;z-index: 15;background: url(../img/2game/pause.png) no-repeat;}
+
+.play-game{position: absolute;width: 304px;height: 76px;top: 26px;left: 700px;background: url(../img/2game/play.png) no-repeat;display: none;}
+
+#timer{position: absolute;color:#fff;font-size: 46pt;margin: 0 auto;left: 510px;top: 32px;font-family: sans-serif;}
+
+.form-notification{
+position: absolute;
+color:  #fff;
+left: 0;
+right: 0;
+margin: 0 auto;
+text-align: center;
+top: 40px;
+font-size: 14pt;
+font-family: sans-serif;
+letter-spacing: 4px;
+}
+
+.animated {
+-webkit-animation-fill-mode: both;
+}
+
+.fadeInUp {
+-webkit-animation-name: fadeInUp;
+-webkit-animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeInUp{
+from {
+  -webkit-transform: translateY(300px); opacity: 0;
+}
+
+to {
+  -webkit-transform: translateY(0px); opacity: 1;
+}
+}
+
+.fadeInUp2 {
+-webkit-animation-name: fadeInUp2;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: 0.2s;
+}
+
+@-webkit-keyframes fadeInUp2{
+from {
+  -webkit-transform: translateY(300px); opacity: 0;
+}
+
+to {
+  -webkit-transform: translateY(0px); opacity: 1;
+}
+}
+
+.slideInBounce {
+-webkit-animation-name: slideInBounce;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: 1.2s;
+}
+
+@-webkit-keyframes slideInBounce{
+from {
+  -webkit-transform: translateX(300px); opacity: 0;
+}
+
+40% {
+  -webkit-transform: translateX(-100px); opacity: 1;
+}
+
+70% {
+  -webkit-transform: translateX(50px); opacity: 1;
+}
+
+to {
+  -webkit-transform: translateX(0px); opacity: 1;
+}
+}
+
+/** Video Ad Section **/ 
+
+#ad-section {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 1146px;
+  height: 670px;
+  z-index: -1;
+  opacity: 0;
+  display: block !important;
+}
