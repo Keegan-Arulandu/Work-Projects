@@ -1,6 +1,6 @@
 # Work-Projects
 
-This is some of the the Project I have Developed at Hubbe.
+These are some of the the Project I have Developed at Hubbe.
 
 # PLEASE NOTE!!!
 
