@@ -1,0 +1,324 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Index</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Stylsheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/swipe.css" />
+    <link rel="stylesheet" href="css/app.css" />
+
+</head>
+<body onload="cabapi.init()">
+
+    <!-- TMG Wrapper -->
+    <div class="tmg-wrapper">
+
+        <section id="interface">
+            <div class="swiper-wrapper">
+
+                <!-- Landing Page - Slide 0 -->
+                <div class="swiper-slide cmp-landing disable-swipe">
+                    <div class="swiper-wrapper lan-wrap">
+                        <div class="swiper-slide disable-swipe"><img src="img/0-landing/1/bg.jpg"></div>
+                    </div>
+                    <section id="home-section">
+                        <span class="navs head" data-navs="5"></span>
+                        <span class="navs gallery-btn" data-navs="1"></span>
+                        <span class="navs features-btn" data-navs="2"></span>
+                        <span class="navs test-btn" data-navs="3"></span>
+                        <span class="navs play-btn" data-navs="4"></span>
+                        <div class="button-img"></div>
+                        <div class="logo-img"></div>
+                    </section>
+                </div>
+
+                <!-- Form Options Page - Slide 1 -->
+                <div class="swiper-slide cmp-form disable-swipe">
+                    <span class="back"></span>
+                    <form id="form">
+                        <input type="text" id="name" placeholder=" ">
+                        <input type="tel" id="number" maxlength="10" placeholder=" ">
+                        <select id="dealers">
+                            <option value="0" id="first-child" class="inputfields" disabled="" selected=""></option>
+                                <optgroup label="WESTERN CAPE">
+                                    <option value="CMH Volvo Cars Cape Town | Foreshore">CMH Volvo Cars Cape Town | Foreshore</option>
+                                    <option value="Rola Volvo Cars Helderberg | Somerset West">Rola Volvo Cars Helderberg | Somerset West</option>
+                                    <option value="Volvo Cars George | George">Volvo Cars George | George</option>
+                                </optgroup>
+
+                                <optgroup label="GAUTENG">
+                                    <option value="Auto Baltic East Rand | Boksburg">Auto Baltic East Rand | Boksburg</option>
+                                    <option value="Auto Baltic Midrand | Midrand">Auto Baltic Midrand | Midrand</option>
+                                    <option value="Auto Baltic Vereeniging | Three Rivers">Auto Baltic Vereeniging | Three Rivers</option>
+                                    <option value="CMH Volvo Cars Bryanston | Bryanston">CMH Volvo Cars Bryanston | Bryanston</option>
+                                    <option value="CMH Volvo Cars Pretoria | Hatfield">CMH Volvo Cars Pretoria | Hatfield</option>
+                                    <option value="CMH Volvo Cars Silver Lakes | Silver Lakes">CMH Volvo Cars Silver Lakes | Silver Lakes</option>
+                                    <option value="CMH Volvo Cars Westrand | Strubens Valley">CMH Volvo Cars Westrand | Strubens Valley</option>
+                                    <option value="Tom Campher Volvo Cars | Auckland Park">Tom Campher Volvo Cars | Auckland Park</option>
+                                    <option value="Volvo Cars Bedfordview | Bedfordview">Volvo Cars Bedfordview | Bedfordview</option>
+                                </optgroup>
+
+                                <optgroup label="EASTERN CAPE">
+                                    <option value="Volvo Cars East London | Arcadia">Volvo Cars East London | Arcadia</option>
+                                    <option value="Volvo Cars Port Elizabeth | Newton Park">Volvo Cars Port Elizabeth | Newton Park</option>
+                                </optgroup>
+
+                                <optgroup label="FREE STATE">
+                                    <option value="Imperial Bloemfontein | Bloemfontein">Imperial Bloemfontein | Bloemfontein</option>
+                                </optgroup>
+
+                                <optgroup label="KWAZULU NATAL">
+                                    <option value="CMH Volvo Cars Umhlanga | Umhlanga Ridge">CMH Volvo Cars Umhlanga | Umhlanga Ridge</option>
+                                    <option value="Volvo Cars Pietermaritzburg | Bird Sanctuary">Volvo Cars Pietermaritzburg | Bird Sanctuary</option>
+                                    <option value="Volvo Cars Pinetown | Pinetown">Volvo Cars Pinetown | Pinetown</option>
+                                </optgroup>
+
+                                <optgroup label="NORTH WEST">
+                                    <option value="Auto Baltic Rustenburg | Waterfall Park">Auto Baltic Rustenburg | Waterfall Park</option>
+                                </optgroup>
+
+                                <optgroup label="MPUMALANGA">
+                                    <option value="Auto Baltic Nelspruit | Riverside Park">Auto Baltic Nelspruit | Riverside Park</option>
+                                </optgroup>
+
+                                <optgroup label="LIMPOPO">
+                                    <option value="Penta Volvo Cars Polokwane | Polokwane">Penta Volvo Cars Polokwane | Polokwane</option>
+                                </optgroup>
+                        </select>
+                        <input type="email" id="email" placeholder=" ">
+                        <input type="checkbox" checked="true" class="checkbox validate">
+                        <input type="button" id="submit">
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery-section">
+            <div class="swiper-wrapper">      
+                <div class="swiper-slide"><img src="img/1-gallery/1.jpg"></div>
+                <div class="swiper-slide"><img src="img/1-gallery/2.jpg"></div>
+                <div class="swiper-slide"><img src="img/1-gallery/3.jpg"></div>
+                <div class="swiper-slide"><img src="img/1-gallery/4.jpg"></div>
+                <div class="swiper-slide"><img src="img/1-gallery/5.jpg"></div>
+                <div class="swiper-slide"><img src="img/1-gallery/6.jpg"></div>
+                <div class="swiper-slide"><img src="img/1-gallery/7.jpg"></div>
+                <div class="swiper-slide"><img src="img/1-gallery/8.jpg"></div>
+                <div class="swiper-slide"><img src="img/1-gallery/9.jpg"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            
+            <section id="gallery-top">
+                <span class="gal-btns gal-home" data-gals="home"></span>
+                <span class="gal-btns gal-test" data-gals="test"></span>
+            </section>
+
+            <div class="arrows"></div>
+            <div class="prev-gal"></div>
+            <div class="next-gal"></div>
+            <div class="link"></div>
+            <div class="gal-text"></div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features-section">
+
+            <!-- Buid Menu -->
+            <section id="menu-bar">
+                <span class="items item-1" data-items="1"></span>
+                <span class="items item-2" data-items="2"></span>
+                <span class="items item-3" data-items="3"></span>
+                <span class="items item-4" data-items="4"></span>
+            </section>
+
+            <section id="finance-bar">
+                <span class="feats gal-test" data-feats="enquire"></span>
+            </section>
+
+            <span class="feats feat-home" data-feats="home"></span>
+            <span class="feats backwards" data-feats="backwards"></span>
+            <span class="feats forward" data-feats="forward"></span>
+
+            <div class="swiper-wrapper">      
+                <div class="swiper-slide disable-swipe">
+                    <img src="img/2-features/instructions/example.jpg">
+                    <section id="features-top">
+                        <span class="feats instruction-btns" data-feats="next"></span>
+                    </section>
+                </div>
+
+                <!-- Car Build Features Slides -->
+                <div class="swiper-slide cmp-colors disable-swipe">
+                    <div class="swatches"></div>
+                    <div class="color-text"></div>
+                    <div class="swiper-wrapper">
+                        <!-- Color Slide -->
+                        <div class="swiper-slide disable-swipe"><img src="img/2-features/color/1.jpg"></div>
+                        <div class="swiper-slide disable-swipe"><img src="img/2-features/color/2.jpg"></div>
+                        <div class="swiper-slide disable-swipe"><img src="img/2-features/color/3.jpg"></div>
+                        <div class="swiper-slide disable-swipe"><img src="img/2-features/color/4.jpg"></div>
+                        <div class="swiper-slide disable-swipe"><img src="img/2-features/color/5.jpg"></div>
+                        <div class="swiper-slide disable-swipe"><img src="img/2-features/color/6.jpg"></div>
+                        <div class="swiper-slide disable-swipe"><img src="img/2-features/color/7.jpg"></div>
+                    </div>
+                    <div class="colors-pagination"></div>
+                </div>
+
+                <!-- Car Wheels Slides -->
+                <div class="swiper-slide cmp-wheels disable-swipe">
+                    <img src="img/2-features/wheels/1.jpg" id="wheels-color">
+                    <div class="wheels"></div>
+                    <div class="wheels-text"></div>
+
+                    <div class="swiper-wrapper wheel-wrapper">
+                        <!-- Wheels Slide -->
+                        <div class="swiper-slide disable-swipe"></div>
+                        <div class="swiper-slide disable-swipe"><img src="img/2-features/wheels/wheels/2.png"></div>
+                        <div class="swiper-slide disable-swipe"><img src="img/2-features/wheels/wheels/3.png"></div>
+                        <div class="swiper-slide disable-swipe"><img src="img/2-features/wheels/wheels/4.png"></div>
+                        <div class="swiper-slide disable-swipe"><img src="img/2-features/wheels/wheels/5.png"></div>
+                        <div class="swiper-slide disable-swipe"><img src="img/2-features/wheels/wheels/6.png"></div>
+                        <div class="swiper-slide disable-swipe"><img src="img/2-features/wheels/wheels/7.png"></div>
+                    </div>
+                    <div class="wheels-pagination"></div>
+                </div>
+
+                <!-- Interior Slides -->
+                <div class="swiper-slide cmp-interior disable-swipe">
+                    <div class="interior"></div>
+                    <div class="interior-text"></div>
+
+                    <div class="swiper-wrapper interior-wrapper">
+                        <!-- Interior Slide -->
+                        <div class="swiper-slide disable-swipe"><img src="img/2-features/interior/1.jpg"></div>
+                        <div class="swiper-slide disable-swipe"><img src="img/2-features/interior/2.jpg"></div>
+                        <div class="swiper-slide disable-swipe"><img src="img/2-features/interior/3.jpg"></div>
+                        <div class="swiper-slide disable-swipe"><img src="img/2-features/interior/4.jpg"></div>
+                        <div class="swiper-slide disable-swipe"><img src="img/2-features/interior/5.jpg"></div>
+
+                    </div>
+                    <div class="interior-pagination"></div>
+                </div>
+
+                <!-- Result Slides -->
+                <div class="swiper-slide cmp-result disable-swipe">
+                    <img src="img/5-result/example.jpg">
+                    <span class="feats book-btn" data-feats="enquire"></span>
+                    <span class="feats finance-btn" data-feats="finance"></span>
+                </div>
+
+                <!-- Finance Slides -->
+                <div class="swiper-slide cmp-finance disable-swipe">
+                    <img src="img/6-finance/1.jpg">
+                    <span class="feats right-btn" data-feats="right"></span>
+                </div>
+
+                <!-- Finance Graph Slides -->
+                <div class="swiper-slide cmp-graph disable-swipe">
+                    <img src="img/6-finance/2.jpg">
+                    <span class="feats left-btn" data-feats="left"></span>
+                </div>
+            </div>
+
+            
+        </section>
+
+        <!-- Video Section -->
+        <section id="video-section">
+            <span class="close-vid"></span>
+            <video src="img/4-video/video.mp4" id="video" type="video/mp4" height="670"></video>
+            <!-- <span class="submitted"></span> -->
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/swipe.js"></script>
+    <script src="js/cab-api.js"></script>
+    <script src="js/hub-api.js"></script>
+    <script src="js/badwords.js"></script>
+    <script src="js/velocity.js"></script>
+    <script src="js/velocityUI.js"></script>
+    <script src="js/app.js"></script>
+
+
+    <!-- Taxi Interactive -->
+    <script>
+        /*----------  Taxi Utils (Form handling)  ----------*/
+
+        function clickHandler(event) {
+            try {
+                // DO NOT REMOVE OR MODIFY THIS CODE
+                event.preventDefault();
+                event.stopImmediatePropagation();
+                //alert('click handler!');
+
+                if($('.checkbox')[0].checked == true) {
+                    checkbox = 'ticked'
+                } else {
+                    checkbox = 'unticked'
+                }
+
+                // fetch user input
+                var name = $('#name').val();
+                var num = $('#number').val();
+                var email = $('#email').val();
+                var dealer = $('#dealers').val();
+                var number = num.substr(1, 9);
+
+                //this object should contain user input data
+                var transportObject = {
+                    'formName':'VolvoV40',
+                    'name': name,
+                    'number': '+27' + number,
+                    'email': email,
+                    'dealer': dealer,
+                    'checkbox': checkbox,
+                    'carResults': JSON.stringify(APP.result),
+                    'fingerprint': Date.now()
+                };
+
+                // New API for saving user input data to main application
+
+                cabapi.uploadFormData(CONTENT_TYPE_JSON, JSON.stringify(transportObject));
+                console.log(transportObject);
+
+                // AJAX Call
+                var settings = {
+                 "async": true,
+                 "crossDomain": true,
+                 "url": "https://fvnk111k6l.execute-api.eu-central-1.amazonaws.com/v1_3/form",
+                 "method": "POST",
+                 "headers": {
+                   "content-type": "application/json"
+                 },
+                 "processData": false,
+                 "data": JSON.stringify(transportObject)
+                }
+
+                $.ajax(settings);
+
+                APP.submit.css('pointer-events', 'none');
+
+                // hide form
+                setTimeout(function () {
+                    Channel.Interface.slideTo(0);
+                    $('#form')[0].reset();
+                    APP.submit.css('pointer-events', 'auto');
+                }, 2500);
+            } catch (error) {
+                alert("Error sending stats to main app!");
+            }
+        }
+    </script>
+
+</body>
+</html>

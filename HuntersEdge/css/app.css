@@ -1,0 +1,469 @@
+﻿/* app.css
+ * Hubble Africa default screen styling ...
+ **/
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.tmg-wrapper{
+    width: 1146px;
+    height: 670px;
+    position: fixed;
+    overflow: hidden;
+}
+
+input, button:focus {
+    outline: none;
+}
+
+span {
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+}
+
+/* Default Swiper Slides Styling */
+.swiper-slide {
+    height: 670px;
+}
+
+/* Default Animations */
+.animated {
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+.absolute-position { 
+    position: absolute;
+    z-index: 10;
+    width: 135px;
+    height: 145px;
+ } 
+.absolute-center { 
+    left: 0; 
+    right: 0; 
+    margin: 0 auto 
+}
+
+
+
+/* Landing Page - SLide 0 */
+
+#landing-section {
+    position:absolute;
+    top:0;
+    left:0;
+    width:1146px;
+    height:670px;
+}
+
+#land-bg {
+    position:absolute;
+    top: -53px;
+    left: -107px;
+    width: 1364px;
+    height: 872px;
+    text-align: center;
+}
+
+.bottle {
+    position:absolute;
+    top: 11px;
+    left: 23px;
+    width: 525px;
+    height: 670px;
+    z-index: 15;
+    opacity: 0;
+    background: url(../img/0-landing/bottle.png) no-repeat;
+    background-position:center !important;
+}
+
+.texts {
+    position:absolute;
+    top: 12px;
+    right: 102px;
+    width: 525px;
+    height: 410px;
+    z-index: 15;
+    opacity: 0;
+    background: url(../img/0-landing/text.png) no-repeat;
+    background-position:center !important;
+}
+
+.yes {
+    position:absolute;
+    bottom: 161px;
+    left: 563px;
+    width: 185px;
+    height: 99px;
+    z-index: 15;
+    opacity: 0;
+    background: url(../img/0-landing/yes.png) no-repeat;
+    background-position:center !important;
+}
+
+.no {
+    position:absolute;
+    bottom: 161px;
+    left: 766px;
+    width: 185px;
+    height: 99px;
+    z-index: 15;
+    opacity: 0;
+    background: url(../img/0-landing/no.png) no-repeat;
+    background-position:center !important;
+}
+
+
+/* No Section */
+#no-section {
+    position:absolute;
+    left:0;
+    top: 670px;
+    width:1146px;
+    height:670px;
+    z-index:30;
+    opacity: 0;
+    display: none;
+}
+
+.no-btn {
+    position:absolute;
+    top: 416px;
+    left: 380px;
+    width: 388px;
+    height:110px;
+    z-index:15;
+}
+
+
+/* Instructions Page - SLide 1 */
+#instructions-bg {
+    position:absolute;
+    top: -53px;
+    left: -107px;
+    width: 1364px;
+    height: 872px;
+    text-align: center;
+}
+
+.instruct-text {
+    position:absolute;
+    top: 174px;
+    left: 116px;
+    width: 906px;
+    height: 219px;
+    z-index: 15;
+    opacity: 1;
+    background: url(../img/1-instructions/header.png) no-repeat;
+    background-position:center !important;
+}
+
+.start {
+    position:absolute;
+    bottom: 144px;
+    left: 399px;
+    width: 366px;
+    height: 99px;
+    z-index: 15;
+    opacity: 1;
+    background: url(../img/1-instructions/start.png) no-repeat;
+    background-position:center !important;
+}
+
+
+/* Game Page - SLide 2 */
+.cmp-game {
+    overflow:hidden;
+}
+
+#game-bg {
+    position:absolute;
+    top: -53px;
+    left: -107px;
+    width: 1364px;
+    height: 872px;
+    text-align: center;
+}
+
+#score-section {
+    position:absolute;
+    top:20px;
+    left:0;
+    width:1146px;
+    height:140px;
+    z-index:20;
+    background: url(../img/2-game/score.png) no-repeat;
+    background-position:center !important;
+}
+
+#cider {
+    position:absolute;
+    top: 16px;
+    right: 426px;
+    width: 129px;
+    height: 113px;
+    text-align:center;
+    font-size: 74pt;
+    font-family:sans-serif;
+    font-weight: bold;
+    color:#fff;
+    z-index:25;
+}
+
+#beer {
+    position:absolute;
+    top: 16px;
+    left: 437px;
+    width: 129px;
+    height: 113px;
+    text-align:center;
+    font-size: 74pt;
+    font-family:sans-serif;
+    font-weight: bold;
+    color:#fff;
+    z-index:25;
+}
+
+#timer {
+    position:absolute;
+    top: 146px;
+    left: 540px;
+    width: 79px;
+    height: 55px;
+    text-align:center;
+    font-size: 32pt;
+    font-family:sans-serif;
+    font-weight: bold;
+    color:#fff;
+    z-index:25;
+}
+
+
+
+/* Try Again Section */
+#again-section {
+    position:absolute;
+    left:0;
+    top: 670px;
+    width:1146px;
+    height:670px;
+    z-index:30;
+    opacity: 0;
+    display: none;
+}
+
+.again-text {
+    position:absolute;
+    top: 200px;
+    left:0;
+    width: 1146px;
+    height:300px;
+    background: url(../img/2-game/again.png) no-repeat;
+    background-position: center !important;
+}
+
+.again-btn {
+    position:absolute;
+    top: 338px;
+    left: 380px;
+    width: 388px;
+    height:110px;
+    z-index:15;
+}
+
+/* Form Page - SLide 3 */
+.well {
+    position:absolute;
+    top: 50px;
+    left:0;
+    width: 1146px;
+    height: 100px;
+    background: url(../img/3-form/well.png) no-repeat;
+    background-position:center !important;
+}
+
+.context {
+    position:absolute;
+    top:0;
+    left:0;
+    width: 690px;
+    height:300px;
+    background: url(../img/3-form/enter.png) no-repeat;
+    background-position:center !important;
+    background-repeat: no-repeat !important;
+}
+
+#form-bg {
+    position:absolute;
+    top: -53px;
+    left: -107px;
+    width: 1364px;
+    height: 872px;
+    text-align: center;
+}
+
+#form {
+    position:absolute;
+    width: 730px;
+    height: 670px;
+    top: 95px;
+    left: -18px;
+    background: url(../img/3-form/form.png) no-repeat;
+    background-position:center !important;
+}
+
+#number {
+    position:absolute;
+    top: 230px;
+    left: 151px;
+    width: 392px;
+    padding: 2px 12px 0 12px;
+    margin: 0 0 0 0;
+    height: 78px;
+    z-index:15;
+    border-radius: 6px;
+    border: solid 6px transparent;
+    background: transparent;
+    font-size: 33pt;
+    font-weight: 700;
+    text-align: center;
+    color: #333331;
+}
+
+#number::placeholder {
+    font-size: 26pt;
+    padding: -20px 0 0 0;
+    font-weight: 700;
+}
+
+#submit {
+    position:absolute;
+    top: 330px;
+    left: 141px;
+    width: 447px;
+    height: 117px;
+    z-index:15;
+    background: transparent;
+    border: solid 6px transparent;
+    background-repeat: no-repeat !important;
+    font-size: 0pt;
+    /* background: url(../img/3-form/submitted.png); */
+    background-position: center !important;
+}
+
+#keypad {
+    position:absolute;
+    top: 187px;
+    right: 130px;
+    width: 397px;
+    height: 338px;
+    border: solid transparent;
+    z-index: 15;
+    background-position: center !important;
+    background: url(../img/3-form/keypad.jpg) no-repeat;
+}
+
+.items {
+    position:relative;
+    float:left;
+    left: 2px;
+    top: 1px;
+    width: 110px;
+    height: 63px;
+    padding: 4px 11px 17px;
+    z-index: 16;
+    background-repeat:no-repeat !important;
+    background-position: center !important;
+}
+
+/* .item-1 {
+    background: url(../img/5-form/keypad/1.png);
+    opacity: 0;
+}
+
+.item-2 {
+    background: url(../img/5-form/keypad/2.png);
+    opacity: 0;
+}
+
+.item-3 {
+    background: url(../img/5-form/keypad/3.png);
+    opacity: 0;
+}
+
+.item-4 {
+    background: url(../img/5-form/keypad/4.png);
+    opacity: 0;
+}
+
+.item-5 {
+    background: url(../img/5-form/keypad/5.png);
+    opacity: 0;
+}
+
+.item-6 {
+    background: url(../img/5-form/keypad/6.png);
+    opacity: 0;
+}
+
+.item-7 {
+    background: url(../img/5-form/keypad/7.png);
+    opacity: 0;
+}
+
+.item-8 {
+    background: url(../img/5-form/keypad/8.png);
+    opacity: 0;
+}
+
+.item-9 {
+    background: url(../img/5-form/keypad/9.png);
+    opacity: 0;
+    left: 2px;
+}
+
+.item-0 {
+    background: url(../img/5-form/keypad/0.png);
+    opacity: 0;
+    top: 1px;
+    left: 2px;
+}
+ */
+.home {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 110px;
+    height: 120px;
+    z-index: 15;
+    background: url(../img/2-game/home.png) no-repeat;
+    background-position: center !important;
+}
+
+.logo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 110px;
+    height: 120px;
+    z-index: 15;
+    /* background: url(../img/2-game/logo.png) no-repeat; */
+    background-position: center !important;
+}
+
+.clear {
+    /*background: url(../img/5-form/keypad/0.png);*/
+    opacity: 0;
+    top: -8px;
+}
+
+.close-form {
+    position:absolute;
+    bottom: 18px;
+    left: 0px;
+    width: 140px;
+    height: 120px;
+    z-index:15;
+    background-position: center !important;
+    background: url(../img/3-form/home.png) no-repeat;
+}

@@ -1,0 +1,660 @@
+﻿/* app.css
+ * Hubble Africa default screen styling ...
+ **/
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.tmg-wrapper{
+    width: 1146px;
+    height: 670px;
+    position: fixed;
+    overflow: hidden;
+}
+
+input, button:focus {
+    outline: none;
+}
+
+span {
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+}
+
+/* Default Swiper Slides Styling */
+.swiper-slide {
+    height: 670px;
+}
+
+/* Default Animations */
+.animated {
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+
+
+/* Landing Page - Slide 0 */
+
+#home-section {
+    position:absolute;
+    top:0;
+    left:0;
+    width:1146px;
+    height:670px;
+    z-index:8;
+}
+
+.head {
+    position:absolute;
+    top: 84px;
+    left: 170px;
+    width: 386px;
+    height: 180px;
+    background: url(../img/0-landing/1/head.png);
+    background-repeat: no-repeat !Important;
+    z-index: 10;
+    opacity: 0;
+}
+
+.logo-img {
+    position:absolute;
+    top: 100px;
+    right: 130px;
+    width: 116px;
+    height: 110px;
+    background: url(../img/0-landing/1/logo.png);
+    background-repeat: no-repeat !Important;
+    z-index: 10;
+    opacity: 1;
+}
+
+.button-img {
+    position:absolute;
+    bottom: 2px;
+    left: 124px;
+    width: 906px;
+    height: 102px;
+    background: url(../img/0-landing/1/buttons.png);
+    background-repeat: no-repeat !Important;
+    opacity: 0;
+}
+
+.gallery-btn {
+    position:absolute;
+    bottom: 20px;
+    left: 102px;
+    width: 316px;
+    height:150px;
+    /* background: url(../img/0-landing/gallery.png); */
+    background-repeat: no-repeat !Important;
+    background-position: center !Important;
+    opacity: 0;
+    z-index: 15;
+}
+
+.features-btn {
+    position:absolute;
+    bottom: 20px;
+    left: 422px;
+    width: 306px;
+    height:150px;
+    /* background: url(../img/0-landing/features.png); */
+    background-repeat: no-repeat !Important;
+    background-position: center !Important;
+    opacity: 0;
+    z-index: 15;
+}
+
+.test-btn {
+    position:absolute;
+    bottom: 20px;
+    left: 730px;
+    width: 306px;
+    height:150px;
+    /* background: url(../img/0-landing/test.png); */
+    background-repeat: no-repeat !Important;
+    background-position: center !Important;
+    opacity: 0;
+    z-index: 15;
+}
+
+.play-btn {
+    position:absolute;
+    bottom: 230px;
+    left: 420px;
+    width: 306px;
+    height: 180px;
+    background-repeat: no-repeat !Important;
+    background-position: center !Important;
+    opacity: 0;
+    z-index: 15;
+}
+
+
+
+/*Gallery Section*/
+
+#gallery-section {
+    position:absolute;
+    top: 670px;
+    left:0;
+    width:1146px;
+    height: 670px;
+    z-index:25;
+    opacity: 0;
+}
+
+#gallery-top {
+    position:absolute;
+    top: 0px;
+    left:0;
+    width:1146px;
+    height: 120px;
+    z-index:15;
+    opacity: 1;
+    background: url(../img/1-gallery/top.png) no-repeat;
+    background-position: center !important;
+}
+
+.gal-test {
+    position:absolute;
+    top: 10px;
+    right: 348px;
+    width: 442px;
+    height: 100px;
+    z-index: 15;
+}
+
+.gal-home {
+    position:absolute;
+    top: 10px;
+    right: 40px;
+    width: 300px;
+    height: 100px;
+    z-index: 15;
+}
+
+.arrows {
+    position:absolute;
+    top: 302px;
+    left:0;
+    width:1146px;
+    height: 120px;
+    z-index:15;
+    opacity: 1;
+    background: url(../img/1-gallery/arrows.png) no-repeat;
+    background-position: center !important;
+}
+
+.prev-gal {
+    position:absolute;
+    top: 280px;
+    left: -50px;
+    width: 210px;
+    height:150px;
+    z-index:25;
+    opacity: 0;
+    outline: none;
+}
+
+.next-gal {
+    position:absolute;
+    top: 280px;
+    right: -50px;
+    width: 210px;
+    height:150px;
+    z-index:25;
+    opacity:1;
+    outline: none;
+}
+
+.link {
+    position:absolute;
+    bottom: 10px;
+    right: 0px;
+    width: 300px;
+    height: 70px;
+    z-index: 15;
+    background: url(../img/1-gallery/za.png) no-repeat;
+    background-position: center !important;
+}
+
+.gal-text {
+    position:absolute;
+    bottom: 20px;
+    left: 36px;
+    width: 300px;
+    height: 70px;
+    z-index: 15;
+    background: url(../img/1-gallery/text.png) no-repeat;
+    background-position: center !important;
+}
+
+.swiper-pagination {
+    bottom:30px !important;
+}
+
+
+/*Features Section*/
+
+#features-section {
+    position:absolute;
+    top: 670px;
+    left:0;
+    width:1146px;
+    height: 670px;
+    z-index:25;
+    opacity: 0;
+    background: #fff;
+}
+
+#features-top {
+    position:absolute;
+    top: 0px;
+    left:0;
+    width:1146px;
+    height: 120px;
+    z-index:15;
+    opacity: 1;
+}
+
+.feat-home {
+    position:absolute;
+    top: 10px;
+    right: 0px;
+    width: 280px;
+    height: 100px;
+    z-index: 15;
+    background-position: center !important;
+}
+
+.instruction-btns {
+    position:absolute;
+    top: 323px;
+    right: 412px;
+    width: 320px;
+    height: 100px;
+    z-index: 15;
+    background-position: center !important;
+}
+
+#menu-bar {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 1146px;
+    height: 120px;
+    z-index: 15;
+    opacity: 0;
+    display: none;
+    background: url(../img/2-features/nav/nav-1.png) no-repeat;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.items {
+    position:relative;
+    float:left;
+    top:0px;
+    left: 340px;
+    width: 157px;
+    height: 120px;
+    z-index:15;
+}
+
+.item-4 {
+    margin: 0 0 0px 50px;
+    width: 250px;
+}
+
+/*Car Colors Slides*/
+.swatches {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 1146px;
+    height: 120px;
+    z-index: 15;
+    opacity: 1;
+    background: url(../img/2-features/nav/swatchess.png) no-repeat;
+    background-position: center !important;
+}
+
+.color-text {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    width: 1146px;
+    height: 90px;
+    z-index: 15;
+    opacity: 1;
+    background: url(../img/2-features/nav/text-1.png) no-repeat;
+    background-position: center !important;
+}
+
+.book-btn {
+    position: absolute;
+    top: 250px;
+    left: 255px;
+    width: 310px;
+    height: 320px;
+    z-index: 15;
+}
+
+.finance-btn {
+    position: absolute;
+    top: 250px;
+    right: 255px;
+    width: 310px;
+    height: 320px;
+    z-index: 15;
+}
+
+
+/*Car Wheels Slides*/
+.wheels {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 1146px;
+    height: 120px;
+    z-index: 15;
+    opacity: 1;
+    background: url(../img/2-features/nav/wheels.png) no-repeat;
+    background-position: center !important;
+}
+
+.wheels-text {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    width: 1146px;
+    height: 90px;
+    z-index: 15;
+    opacity: 1;
+    background: url(../img/2-features/nav/text-2.png) no-repeat;
+    background-position: center !important;
+}
+
+.backwards {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 196px;
+    height: 190px;
+    z-index: 20;
+    opacity: 0;
+    display: none;
+    background: url(../img/2-features/nav/backwards.png) no-repeat;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.forward {
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    width: 196px;
+    height: 190px;
+    z-index: 20;
+    opacity: 0;
+    display: none;
+    background: url(../img/2-features/nav/forward.png) no-repeat;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.wheel-wrapper {
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
+
+/* Car Interior Slides*/
+.interior {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 1146px;
+    height: 120px;
+    z-index: 15;
+    opacity: 1;
+    background: url(../img/2-features/nav/interior.png) no-repeat;
+    background-position: center !important;
+}
+
+.interior-text {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    width: 1146px;
+    height: 90px;
+    z-index: 15;
+    opacity: 1;
+    background: url(../img/2-features/nav/text-3.png) no-repeat;
+    background-position: center !important;
+}
+
+#finance-bar {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 1146px;
+    height: 120px;
+    z-index: 15;
+    opacity: 0;
+    display: none;
+    background-repeat: no-repeat !important;
+    background: url(../img/1-gallery/top.png) no-repeat;
+    background-position: center !important;
+}
+
+.left-btn {
+    position: absolute;
+    bottom: 236px;
+    left: -40px;
+    width: 196px;
+    height: 190px;
+    z-index: 20;
+    opacity: 1;
+    display: block;
+    background: url(../img/6-finance/left.png) no-repeat;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.right-btn {
+    position: absolute;
+    bottom: 236px;
+    right: -40px;
+    width: 196px;
+    height: 190px;
+    z-index: 20;
+    opacity: 1;
+    display: block;
+    background: url(../img/6-finance/right.png) no-repeat;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+
+
+/* Form Page - SLide 3 */
+
+/* Form Page - SLide 3 */
+
+#form-bg {
+    position:absolute;
+    top: -53px;
+    left: -107px;
+    width: 1364px;
+    height: 872px;
+    text-align: center;
+}
+
+#form {
+    position:absolute;
+    width: 1146px;
+    height: 670px;
+    top: 0px;
+    left: 0px;
+    background: url(../img/3-form/form.png) no-repeat;
+    background-position:center !important;
+}
+
+#name {
+    position:absolute;
+    top: 241px;
+    left: 87px;
+    width: 413px;
+    padding: 2px 12px 0 34px;
+    margin: 0 0 0 0;
+    height: 76px;
+    z-index:15;
+    border-radius: 6px;
+    border: solid 6px transparent;
+    background: transparent;
+    font-size: 23pt;
+    font-weight: 500;
+    color: #333331;
+}
+
+#number {
+    position:absolute;
+    top: 242px;
+    left: 587px;
+    width: 413px;
+    padding: 2px 12px 0 34px;
+    margin: 0 0 0 0;
+    height: 76px;
+    z-index:15;
+    border-radius: 6px;
+    border: solid 6px transparent;
+    background: transparent;
+    font-size: 23pt;
+    font-weight: 500;
+    color: #333331;
+}
+
+#dealers {
+    position:absolute;
+    top: 390px;
+    left: 87px;
+    width: 471px;
+    padding: 2px 12px 0 34px;
+    margin: 0 0 0 0;
+    height: 85px;
+    z-index:15;
+    border-radius: 6px;
+    border: solid 6px transparent;
+    background: transparent;
+    font-size: 23pt;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: #333331;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+label, select {
+    display: inline-block;
+    width: 100px;
+}
+
+/* optgroup {
+    color:crimson;
+    border: solid 2px #333;
+    box-sizing: border-box;
+    font-size: 28pt;
+} */
+
+#number::placeholder {
+    font-size: 26pt;
+    padding: -20px 0 0 0;
+    font-weight: 700;
+}
+
+#submit {
+    position:absolute;
+    top: 514px;
+    left: 588px;
+    width: 471px;
+    height: 96px;
+    z-index:15;
+    background: transparent;
+    border: solid 6px transparent !important;
+    background-repeat: no-repeat !important;
+    font-size: 0pt;
+    /* background: url(../img/3-form/submitted.png); */
+    background-position: center !important;
+}
+
+.checkbox {position: absolute;top: 532px;left: 86px;width: 58px;height: 54px;z-index: 15;-webkit-appearance:  none;}
+
+.checkbox:checked {background: url(../img/3-form/tick.png) no-repeat center;background-size: 40px 40px;}
+
+#email {
+    position:absolute;
+    top: 390px;
+    left: 590px;
+    width: 411px;
+    padding: 2px 12px 0 34px;
+    margin: 0 0 0 0;
+    height: 71px;
+    z-index:15;
+    border-radius: 6px;
+    border: solid 6px transparent;
+    background: transparent;
+    font-size: 23pt;
+    font-weight: 500;
+    color: #333331;
+}
+
+.back {
+    position:absolute;
+    top: 30px;
+    right: 0px;
+    width:250px;
+    height: 140px;
+    z-index:15;
+}
+
+
+/*Video Section*/
+#video-section {
+    position:absolute;
+    top: 0px;
+    left:0;
+    width:1146px;
+    height: 670px;
+    z-index:25;
+    opacity: 0;
+    display: none;
+}
+
+.submitted {
+    position:absolute;
+    bottom: -20px;
+    left: 329px;
+    width: 496px;
+    height: 112px;
+    background: url(../img/4-video/submitted.png);
+    background-repeat: no-repeat !Important;
+    background-position: center !Important;
+    opacity: 0;
+}
+
+.close-vid {
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    width: 110px;
+    height: 110px;
+    background: url(../img/4-video/close.png);
+    background-repeat: no-repeat !Important;
+    background-position: center !Important;
+    opacity: 1;
+    z-index: 15;
+}

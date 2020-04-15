@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Index</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Stylsheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/swipe.css" />
+    <link rel="stylesheet" href="css/app.css" />
+
+</head>
+<body onload="cabapi.init()">
+
+    <!-- TMG Wrapper -->
+    <div class="tmg-wrapper">
+
+        <section id="interface">
+            <div class="swiper-wrapper">
+
+                <!-- Landing Page - Slide 0 -->
+                <div class="swiper-slide cmp-landing disable-swipe">
+                    <div class="swiper-wrapper lan-wrap">
+                        
+                        <div class="swiper-slide disable-swipe">
+                            <img src="img/0-landing/1/bg.jpg">
+                        </div>
+
+                        <div class="swiper-slide disable-swipe">
+                            <img src="img/0-landing/2/bg.jpg">
+                        </div>
+
+                        <div class="swiper-slide disable-swipe">
+                            <img src="img/0-landing/3/bg.jpg">
+                        </div>
+
+                    </div>
+                    <section id="home-section">
+                        <span class="head"></span>
+                        <span class="navs gallery-btn" data-navs="1"></span>
+                        <span class="navs features-btn" data-navs="2"></span>
+                        <span class="navs test-btn" data-navs="3"></span>
+                    </section>
+                </div>
+
+                <!-- Form Options Page - Slide 1 -->
+                <div class="swiper-slide cmp-options disable-swipe">
+                    <img src="img/3-form/options/bg.jpg">
+
+                    <section id="options-section">
+                        <span class="back"></span>
+                        <span class="quote-text"></span>
+                        <span class="options mobile-link" data-options="1"></span>
+                        <span class="options email-link" data-options="2"></span>
+                    </section>
+
+                </div>
+
+                <!-- Number Form Page - Slide 2 -->
+                <div class="swiper-slide cmp-num disable-swipe">
+                    <img src="img/3-form/mobile/example.jpg">
+                    <span class="back-form"></span>
+                    <span class="form-text"></span>
+                    <span class="context"></span>
+                    <form id="form" class="form-num">
+                        <input type="tel" id="number" maxlength="10" placeholder=" ">
+                        <input type="button" id="submit-num">
+                    </form>
+                </div>
+
+                <!-- Email Form Page - Slide 2 -->
+                <div class="swiper-slide cmp-mail disable-swipe">
+                    <img src="img/3-form/email/example.jpg">
+                    <span class="back-form"></span>
+                    <span class="form-text"></span>
+                    <span class="context"></span>
+                    <form id="form" class="form-mail">
+                        <input type="email" id="email" placeholder=" ">
+                        <input type="button" id="submit-mail">
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="gallery-section">
+            <div class="swiper-wrapper">      
+                <div class="swiper-slide"><img src="img/1-gallery/1.jpg"></div>
+                <div class="swiper-slide"><img src="img/1-gallery/2.jpg"></div>
+                <div class="swiper-slide"><img src="img/1-gallery/3.jpg"></div>
+                <div class="swiper-slide"><img src="img/1-gallery/4.jpg"></div>
+                <div class="swiper-slide"><img src="img/1-gallery/5.jpg"></div>
+                <div class="swiper-slide"><img src="img/1-gallery/6.jpg"></div>
+                <div class="swiper-slide"><img src="img/1-gallery/7.jpg"></div>
+                <div class="swiper-slide"><img src="img/1-gallery/8.jpg"></div>
+                <div class="swiper-slide"><img src="img/1-gallery/9.jpg"></div>
+                <div class="swiper-slide"><img src="img/1-gallery/10.jpg"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            
+            <section id="gallery-top">
+                <span class="gal-btns gal-home" data-gals="home"></span>
+                <span class="gal-btns gal-test" data-gals="test"></span>
+            </section>
+
+            <div class="arrows"></div>
+            <div class="prev-gal"></div>
+            <div class="next-gal"></div>
+            <div class="link"></div>
+        </section>
+
+        <section id="features-section">
+            <section id="progress-container">
+                <div class="col-5th">
+                    <div class="progress-bar" id="bar-1"></div>
+                </div>
+                <div class="col-5th">
+                    <div class="progress-bar" id="bar-2"></div>
+                </div>
+                <div class="col-5th">
+                    <div class="progress-bar" id="bar-3"></div>
+                </div>
+                <div class="col-5th">
+                    <div class="progress-bar" id="bar-4"></div>
+                </div>
+                <div class="col-5th">
+                    <div class="progress-bar" id="bar-5"></div>
+                </div>
+            </section>
+
+            <div class="swiper-wrapper">      
+                <div class="swiper-slide special"><img src="img/2-features/1.jpg"></div>
+                <div class="swiper-slide"><img src="img/2-features/2.jpg"></div>
+                <div class="swiper-slide"><img src="img/2-features/3.jpg"></div>
+                <div class="swiper-slide"><img src="img/2-features/4.jpg"></div>
+                <div class="swiper-slide"><img src="img/2-features/5.jpg"></div>
+            </div>
+
+            <section id="features-top">
+                <span class="feat-btns feat-home" data-feats="home"></span>
+            </section>
+
+            <div class="swiper-pagination-feat"></div>
+
+            <div class="scroll-down"></div>
+            <div class="scroll-up"></div>
+            <div class="feat-btns test-feat" data-feats="test"></div>
+        </section>
+
+        <section id="video-section">
+            <span class="close-vid"></span>
+            <video src="img/4-video/video.mp4" id="video" type="video/mp4" height="670"></video>
+            <span class="submitted"></span>
+        </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/cabapi.js"></script>
+    <script src="js/swipe.js"></script>
+    <script src="js/badwords.js"></script>
+    <script src="js/velocity.js"></script>
+    <script src="js/velocityUI.js"></script>
+    <script src="js/app.js"></script>
+
+
+    <!-- Taxi Interactive -->
+    <script>
+        /*----------  Taxi Utils (Form handling)  ----------*/
+
+        function bodyLoadedHandler() {
+            //DO NOT CHANGE THIS CODE
+            // TaxiInteractiveUtils.initialize();
+        }
+
+        function EmailHandler(event) {
+            try {
+                // DO NOT REMOVE OR MODIFY THIS CODE
+                event.preventDefault();
+                event.stopImmediatePropagation();
+                //alert('click handler!');
+
+                // fetch user input
+                var email = $('#email').val();
+
+                //this object should contain user input data
+                var transportObject = {
+                    'formName':'VolvoMail',
+                    'email' : email,
+                    'fingerprint': Date.now(),
+                };
+
+                // New API for saving user input data to main application
+
+                cabapi.uploadFormData(CONTENT_TYPE_JSON, JSON.stringify(transportObject));
+
+                // AJAX Call
+                var settings = {
+                 "async": true,
+                 "crossDomain": true,
+                 "url": "https://fvnk111k6l.execute-api.eu-central-1.amazonaws.com/v1_3/form",
+                 "method": "POST",
+                 "headers": {
+                   "content-type": "application/json"
+                 },
+                 "processData": false,
+                 "data": JSON.stringify(transportObject)
+                }
+
+                $.ajax(settings);
+
+                APP.playVideo();
+
+                $('#submit-num, #submit-mail').css('pointer-events', 'none');
+
+
+                // hide form
+                setTimeout(function () {
+                    Channel.Interface.slideTo(0);
+                    $('.form-mail')[0].reset();
+                    $('.form-num')[0].reset();
+                    $('#submit-num, #submit-mail').css('pointer-events', 'auto');
+                    // APP.submit.css('background', 'url(./img/3-form/submit.png)');
+                    $('.context').velocity('transition.fadeOut');
+                }, 2500);
+            } catch (error) {
+                alert("Error sending stats to main app!");
+            }
+        }
+
+        function NumberHandler(event) {
+            try {
+                // DO NOT REMOVE OR MODIFY THIS CODE
+                event.preventDefault();
+                event.stopImmediatePropagation();
+                //alert('click handler!');
+
+
+                // fetch user input
+                var num = $('#number').val();
+                var number = num.substr(1, 9);
+
+                //this object should contain user input data
+                var transportObject = {
+                    'formName':'VolvoNumber',
+                    'number' :"+27" + number,
+                    'fingerprint': Date.now(),
+                };
+
+                // New API for saving user input data to main application
+
+                cabapi.uploadFormData(CONTENT_TYPE_JSON, JSON.stringify(transportObject));
+
+                // AJAX Call
+                var settings = {
+                 "async": true,
+                 "crossDomain": true,
+                 "url": "https://fvnk111k6l.execute-api.eu-central-1.amazonaws.com/v1_3/form",
+                 "method": "POST",
+                 "headers": {
+                   "content-type": "application/json"
+                 },
+                 "processData": false,
+                 "data": JSON.stringify(transportObject)
+                }
+
+                $.ajax(settings);
+
+                APP.playVideo();
+
+                $('#submit-num, #submit-mail').css('pointer-events', 'none');
+                
+                // hide form
+                setTimeout(function () {
+                    Channel.Interface.slideTo(0);
+                    $('.form-mail')[0].reset();
+                    $('.form-num')[0].reset();
+                    $('#submit-num, #submit-mail').css('pointer-events', 'auto');
+                    // APP.submit.css('background', 'url(./img/3-form/submit.png)');
+                    $('.context').velocity('transition.fadeOut');
+                }, 2500);
+            } catch (error) {
+                alert("Error sending stats to main app!");
+            }
+        }
+    </script>
+
+</body>
+</html>
