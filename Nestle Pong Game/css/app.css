@@ -1,0 +1,449 @@
+﻿/* app.css
+ * Hubble Africa default screen styling ...
+ **/
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.tmg-wrapper{
+    width: 1146px;
+    height: 670px;
+    position: fixed;
+    overflow: hidden;
+}
+
+input, button:focus {
+    outline: none;
+}
+
+span {
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+}
+
+/* Default Swiper Slides Styling */
+.swiper-slide {
+    height: 670px;
+}
+
+/* Default Animations */
+.animated {
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+
+
+/* Landing Page - Main Slide 1 */
+#landing-section {
+    position:absolute;
+    top:0;
+    left:0;
+    width:1146px;
+    height:670px;
+}
+
+.landing-text {
+    position:absolute;
+    background: url(../img/1/text.png)no-repeat;
+    margin: 0 auto;
+    top: 0;
+    width: 100%;
+    height: 540px;
+    opacity: 0;
+}
+
+/* Home Page - Main Slide 2 */
+#home-section {
+    position:absolute;
+    top:0;
+    left:0;
+    width:1146px;
+    height:670px;
+}
+
+.texts {
+    position:absolute;
+    margin: 0 auto;
+    top: 0;
+    width: 1146px;
+    height: 670px;
+    opacity: 0;
+}
+
+.info-texts {
+    position:absolute;
+    margin: 0 auto;
+    top: 0;
+    width: 1146px;
+    height: 670px;
+    opacity: 0;
+}
+
+.home-text-1 {
+    background: url(../img/2/text-1.png)no-repeat;
+}
+
+.home-text-2 {
+    background: url(../img/2/text-2.png)no-repeat;
+}
+
+.home-text-3 {
+    background: url(../img/2/text-3.png)no-repeat;
+}
+
+.home-text-4 {
+    background: url(../img/2/text-4.png)no-repeat;
+}
+
+.home-image-1 {
+    background: url(../img/2/image-1.png)no-repeat;
+    position:absolute;
+    top:0;
+    left:0;
+    width: 1146px;
+    height: 670px;
+    opacity: 0;
+}
+
+.home-image-2 {
+    background: url(../img/2/image-2.png)no-repeat;
+    position:absolute;
+    top:0;
+    left:0;
+    width: 1146px;
+    height: 670px;
+    opacity: 0;
+}
+
+.flavour-img {
+    position:absolute;
+    top:0;
+    left:0;
+    width: 1146px;
+    height: 670px;
+    opacity: 0;
+}
+
+#playbtn {
+    position:absolute;
+    top: 420px;
+    right: 29px;
+    height: 230px;
+    width: 230px;
+    z-index: 15;
+}
+
+/* Contact Page - Main Slide 3 */
+.contact-text {
+    position:absolute;
+    background: url(../img/3/text.png)no-repeat;
+    margin: 0 auto;
+    top: 0;
+    width: 1146px;
+    height: 670px;
+    opacity: 0;
+}
+
+#form {
+    background: url(../img/3/form.png)no-repeat;
+    position:absolute;
+    top:0;
+    left:0;
+    height:670px;
+    width:1146px;
+}
+
+.input-field {
+    position:absolute;
+    top: 405px;
+    left: 420px;
+    width: 374px;
+    height: 51px;
+    padding: 0 30px 0;
+    z-index: 15;
+    background:transparent;
+    border: solid 3px rgba(243, 0, 0, 0);
+    font-size: 22px;
+    color: #080807;
+}
+
+#email {
+    top: 474px;
+    left: 420px;
+}
+
+#submit {
+    
+position: absolute;
+    
+bottom: 60px;
+    
+left: 420px;
+    
+width: 180px;
+    
+height: 70px;
+    
+background: transparent;
+    
+color: transparent;
+    
+border: transparent;
+}
+
+.notification {
+    position: absolute;
+    top: 19px;
+    left: 271px;
+    font-size: 27pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #000000;
+    letter-spacing: 3px;
+    display: none;
+}
+
+input[type=button] {
+    background-color: transparent;
+}
+
+button {
+    background: transparent;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #080807;
+}
+
+button, input:focus{
+    outline: none;
+}
+
+input, button, select:focus {
+    outline: none;
+    background: transparent;
+}
+
+/* Flavour Page - Main Slide 3 */
+.flavour-text-1 {
+    background: url(../img/4/text-1.png)no-repeat;
+    position:absolute;
+    margin: 0 auto;
+    top: 0;
+    width: 1146px;
+    height: 670px;
+    opacity: 0;
+}
+
+.flavour-text-2 {
+    background: url(../img/4/text-2.png)no-repeat;
+    position:absolute;
+    margin: 0 auto;
+    top: 0;
+    width: 1146px;
+    height: 670px;
+    opacity: 0;
+}
+
+.flavour-image-1 {
+    background: url(../img/4/image-1.png)no-repeat;
+}
+
+.flavour-image-2 {
+    background: url(../img/4/image-2.png)no-repeat;
+}
+
+.options {
+    position:absolute;
+    width: 180px;
+    height:250px;
+    z-index:15;
+}
+
+.flavourBtn-1 {
+    bottom: 74px;
+    left: 300px;
+}
+
+.flavourBtn-2 {
+    bottom: 74px;
+    left: 665px;
+}
+
+
+/*Pong Game Page*/
+canvas {
+    display: block;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+}
+
+.lerato {
+    position:absolute;
+    top: 40px;
+    left: 120px;
+    z-index:10;
+}
+
+.coconut {
+    position:absolute;
+    top: 40px;
+    right: 250px;
+    z-index: 10;
+}
+
+/* Scores Page */
+.board {
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.coco {
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.choco {
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.scores-text {
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+
+/*Page Animations*/
+
+.fadeInDown {
+    animation-name: fadeInDown;
+    -webkit-animation-name: fadeInDown;
+    animation-duration: 1.0s;
+    -webkit-animation-duration: 1.0s;
+    animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode:both;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+}
+
+@keyframes fadeInDown {
+    from{transform: translateY(-100px); opacity: 0}
+    to{transform: translateY(0px); opacity: 1}
+}
+
+@-webkit-keyframes fadeInDown {
+    from{-webkit-transform: translateY(-100px); opacity: 0}
+    to{-webkit-transform: translate(0px); opacity: 1}
+}
+
+
+.fadeInUp {
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+    animation-duration: 1.0s;
+    -webkit-animation-duration: 1.0s;
+    animation-delay: 1.8s;
+    -webkit-animation-delay: 1.8s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode:both;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+}
+
+@keyframes fadeInUp {
+    from{transform: translateY(100px); opacity: 0}
+    to{transform: translateY(0px); opacity: 1}
+}
+
+@-webkit-keyframes fadeInUp {
+    from{-webkit-transform: translateY(100px); opacity: 0}
+    to{-webkit-transform: translate(0px); opacity: 1}
+}
+
+
+.fadeIn {
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    animation-duration: 1.0s;
+    -webkit-animation-duration: 1.0s;
+    animation-delay: 2.1s;
+    -webkit-animation-delay: 2.1s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@-webkit-keyframes fadeIn {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+
+.fadeInRight {
+  animation-name: fadeInRight;
+  animation-duration: 1.2s;
+  animation-delay: 1.8s;
+  -webkit-animation-delay: 1.8s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: fadeInRight;
+  -webkit-animation-duration: 1.2s;
+  opacity: 1 !important;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100px) rotate(-20deg);
+    -webkit-transform: translateX(-100px) rotate(-20deg);
+
+  }
+
+  to {
+    opacity: 1;
+        transform: none;
+    -webkit-transform: none;
+  }
+}
+
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+  animation-duration: 1.2s;
+  animation-delay: 1.8s;
+  -webkit-animation-delay: 1.8s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeft;
+  -webkit-animation-duration: 1.2s;
+  /* opacity: 1 !important; */
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100px) rotate(-20deg);
+    -webkit-transform: translateX(100px) rotate(-20deg);
+
+  }
+
+  to {
+    opacity: 1;
+        transform: none;
+    -webkit-transform: none;
+  }
+}
